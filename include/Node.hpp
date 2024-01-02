@@ -1,6 +1,13 @@
 #ifndef NODE_HPP
 #define NODE_HPP
 
+
+/**
+ * @brief template class that will be used amongst various structures
+ *        to serve as a node field
+ * 
+ * @tparam T 
+ */
 template <class T>
 class Node
 {
