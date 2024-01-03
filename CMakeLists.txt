@@ -15,12 +15,15 @@ include_directories(include src)
 
 # Add your source files
 add_executable(MAIN 
-    src/main.cpp 
+    src/main.cpp
+    src/LinkedList.cpp 
     )
 
 # Add your test files
 add_executable(TEST 
     test/test_main.cpp
+    test/LinkedListTest.cpp
+    src/LinkedList.cpp
     )
 
 # Link your main application with Student class
