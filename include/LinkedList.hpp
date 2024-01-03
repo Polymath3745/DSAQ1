@@ -104,6 +104,12 @@ class LinkedList
          */
         bool isEmpty();
 
+        /**
+         * @brief reverse the list
+         * 
+         */
+        void reverse();
+
     private:
         Node<int>* head;
 };
