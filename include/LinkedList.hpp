@@ -19,7 +19,7 @@ class LinkedList
         LinkedList();
         
         /**
-         * @brief insert a node at the beggining of the linked list
+         * @brief insert a node at the begining of the linked list
          * 
          * @param val 
          */
@@ -109,6 +109,17 @@ class LinkedList
          * 
          */
         void reverse();
+
+        /**
+         * @brief Get the value contained in head object
+         * for testing purposes
+         * 
+         * @return int 
+         */
+        int getHeadvalue()
+        {
+            return head->data;
+        }
 
     private:
         Node<int>* head;
