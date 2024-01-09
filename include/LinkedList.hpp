@@ -121,6 +121,11 @@ class LinkedList
             return head->data;
         }
 
+        Node<int>* getHead()
+        {
+            return head;
+        }
+
     private:
         Node<int>* head;
 };
