@@ -2,6 +2,7 @@
 #define LINKEDLIST_HPP
 
 #include "Node.hpp"
+#include <iostream>
 
 /**
  * @brief Linked list structure class
