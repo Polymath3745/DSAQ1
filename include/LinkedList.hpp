@@ -46,14 +46,14 @@ class LinkedList
          * 
          * @param val 
          */
-        void deleteAtbeggining(int val);
+        void deleteAtbeggining();
 
         /**
          * @brief delete node at end of list
          * 
          * @param val 
          */
-        void deleteAtEnd(int val);
+        void deleteAtEnd();
         
         /**
          * @brief delete a specific node in the list
