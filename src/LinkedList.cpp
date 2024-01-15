@@ -72,7 +72,15 @@ void LinkedList::insert(int val, int target)
     newNode->next = currentNode;
 }
 
-void LinkedList::deleteAtbeggining()
+void LinkedList::deleteAtbeginning()
 {
+    if (head == nullptr)
+    {
+        std::cout << "No head to delete" << std::endl;
+        return; //TODO: create a check error for this later
+    }
 
+    Node<int>* temp = head;
+    head = head->next;
+    delete temp;
 }
