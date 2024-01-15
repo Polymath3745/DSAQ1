@@ -71,3 +71,8 @@ void LinkedList::insert(int val, int target)
     prevNode->next = newNode;
     newNode->next = currentNode;
 }
+
+void LinkedList::deleteAtbeggining()
+{
+
+}
