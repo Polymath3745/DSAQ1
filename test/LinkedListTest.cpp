@@ -1,7 +1,10 @@
 #include <gtest/gtest.h>
 #include "LinkedList.hpp"
 
-// Define a test fixture class
+/**
+ * @brief Test fixture class for similar set up
+ * 
+ */
 class LinkedListTest : public ::testing::Test
 {
 protected:
@@ -39,6 +42,7 @@ TEST_F(LinkedListTest, insertAtbeginning)
  * @brief test for the insert at end function
  * in the linked list class
  * 
+ * This test does not utilize the test fixture
  */
 TEST_F(LinkedListTest, insertAtEnd)
 {
