@@ -1,7 +1,8 @@
-#include <iostream>
+#include "LinkedList.hpp"
 
 int main()
 {
-    std::cout << "hello world" << std::endl;
+    LinkedList list;
+    
     return 0;
 }
