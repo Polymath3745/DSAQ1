@@ -43,25 +43,22 @@ class LinkedList
 
         /**
          * @brief delete node at the beggining of the linked list
-         * 
-         * @param val 
+         *  
          */
         void deleteAtbeginning();
 
         /**
          * @brief delete node at end of list
          * 
-         * @param val 
          */
         void deleteAtEnd();
         
         /**
          * @brief delete a specific node in the list
          * 
-         * @param val 
-         * @param location 
+         * @param target 
          */
-        void del(int val, int location);
+        void del(int target);
 
         /**
          * @brief traverse the list iteratively
