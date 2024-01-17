@@ -84,3 +84,32 @@ void LinkedList::deleteAtbeginning()
     head = head->next;
     delete temp;
 }
+
+void LinkedList::deleteAtEnd()
+{
+    if(head == nullptr)
+    {
+        std::cout << "Linked list is empty" << std::endl;
+        return;
+    }
+
+    Node<int>* currentNode = head;
+    Node<int>* prevNode = nullptr;
+
+    // Special case: if there is only one node in the list
+    if (currentNode->next == nullptr)
+    {
+        delete currentNode;
+        head = nullptr;  // Update the head to nullptr
+        return;
+    }
+
+    while(currentNode->next != nullptr)
+    {
+        prevNode = currentNode;
+        currentNode = currentNode->next;
+    }
+
+    prevNode->next = nullptr;
+    delete currentNode;
+}
