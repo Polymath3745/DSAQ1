@@ -113,3 +113,45 @@ void LinkedList::deleteAtEnd()
     prevNode->next = nullptr;
     delete currentNode;
 }
+
+void LinkedList::del(int target)
+{
+    if (head == nullptr)
+    {
+        std::cout << "This list is already empty" << std::endl;
+        return;
+    }
+
+    Node<int>* curr = head;
+    Node<int>* prev = nullptr;
+
+    if (curr->next == nullptr)
+    {
+        if (curr->data == target)
+        {
+            delete curr;
+            return;
+        }
+
+        std::cout << "List does not contain target" << std::endl;
+        return;
+    }
+
+    while (curr->next != nullptr && curr->data != target)
+    {
+        prev = curr;
+        curr = curr->next;
+    }
+
+    if (curr->data != target)
+    {
+        std::cout << "List does not contain target";
+        return;
+    }
+
+    else
+    {
+        prev->next = curr->next;
+        delete curr;
+    }
+}
