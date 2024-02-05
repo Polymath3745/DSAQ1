@@ -155,3 +155,27 @@ void LinkedList::del(int target)
         delete curr;
     }
 }
+
+void LinkedList::iterativeTraversal()
+{
+    // Case where linked list is empty
+    if (head == nullptr)
+    {
+        std::cout << "The list is empty" << std::endl;
+        return;
+    }
+
+    // Case where linked list only contains 1 node
+    else if (head->next == nullptr)
+    {
+        std::cout << "The list contains 1 node : " << head->data << std::endl;
+        return;
+    }
+
+    Node<int>* current = head;
+    while (current != nullptr)
+    {
+        std::cout << current->data << std::endl;
+        current = current->next;
+    }
+}
