@@ -179,3 +179,17 @@ void LinkedList::iterativeTraversal()
         current = current->next;
     }
 }
+
+void LinkedList::recursiveTraversal(Node<int>* node)
+{
+    // Case where linked list is empty
+    if (node == nullptr)
+    {
+        std::cout << "\neither end of list or list is empty" << std::endl;
+        return;
+    }
+
+    std::cout << node->data << std::endl;
+
+    recursiveTraversal(node->next);
+}
