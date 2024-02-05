@@ -70,7 +70,7 @@ class LinkedList
          * @brief traverse the list recursively
          * 
          */
-        void recursiveTraversal();
+        void recursiveTraversal(Node<int>* node);
 
         /**
          * @brief search for a node in a list
@@ -126,5 +126,14 @@ class LinkedList
 
     private:
         Node<int>* head;
+
+        /**
+         * @brief Overload for initialization
+         * 
+         */
+        void recursiveTraversal()
+        {
+            recursiveTraversal(head);
+        }
 };
 #endif
