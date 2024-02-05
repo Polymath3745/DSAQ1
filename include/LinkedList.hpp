@@ -66,6 +66,12 @@ class LinkedList
          */
         void iterativeTraversal();
 
+         /**
+         * @brief Overload for initialization
+         * 
+         */
+        void recursiveTraversal();
+
         /**
          * @brief traverse the list recursively
          * 
@@ -126,14 +132,5 @@ class LinkedList
 
     private:
         Node<int>* head;
-
-        /**
-         * @brief Overload for initialization
-         * 
-         */
-        void recursiveTraversal()
-        {
-            recursiveTraversal(head);
-        }
 };
 #endif
