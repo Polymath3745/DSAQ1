@@ -8,6 +8,6 @@ int main()
         list.insertAtEnd(i);
     }
 
-    list.iterativeTraversal();
+    list.recursiveTraversal();
     return 0;
 }
