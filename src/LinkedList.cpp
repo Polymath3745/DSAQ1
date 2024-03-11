@@ -193,3 +193,32 @@ void LinkedList::recursiveTraversal(Node<int>* node)
 
     recursiveTraversal(node->next);
 }
+
+void LinkedList::recursiveTraversal()
+{
+    recursiveTraversal(this->head);
+}
+
+Node<>* LinkedList::reverse(Node<>* head)
+{
+    if (head == nullptr)
+    {
+        return nullptr;
+    }
+
+
+    Node<int>* curr = head;
+    Node<int>* prev = nullptr;
+    Node<int>* tmp;
+
+    while(curr != nullptr)
+    {
+        tmp = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr = tmp;
+    }
+
+    head = prev;
+    return head;
+}
