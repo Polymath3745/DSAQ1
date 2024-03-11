@@ -68,7 +68,8 @@ class LinkedList
 
          /**
          * @brief Overload for initialization
-         * 
+         * passes the head of "this" to the 
+         * recursive function
          */
         void recursiveTraversal();
 
@@ -112,7 +113,7 @@ class LinkedList
          * @brief reverse the list
          * 
          */
-        void reverse();
+        Node<>* reverse(Node<>* head);
 
         /**
          * @brief Get the value contained in head object
