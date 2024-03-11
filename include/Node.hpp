@@ -8,7 +8,7 @@
  * 
  * @tparam T 
  */
-template <class T>
+template <class T = int>
 class Node
 {
     public:
