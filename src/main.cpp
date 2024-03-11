@@ -3,11 +3,11 @@
 int main()
 {
     LinkedList list;
-    for (int i = 1; i <=10; i++ )
+    for (int i = 1; i <=3; i++ )
     {
         list.insertAtEnd(i);
     }
 
-    list.recursiveTraversal();
+    list.reverse(list.getHead());
     return 0;
 }
