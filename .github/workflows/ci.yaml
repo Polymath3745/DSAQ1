@@ -19,7 +19,7 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y cmake
 
     - name: Configure
-      run: cmake ${{ github.workspace }}
+      run: cmake ..
       working-directory: ${{ github.workspace }}    
     
     - name: Build with CMake
