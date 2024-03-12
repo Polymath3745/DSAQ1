@@ -9,5 +9,5 @@ int main()
     }
 
     list.reverse(list.getHead());
-    return 0;
+    
 }
