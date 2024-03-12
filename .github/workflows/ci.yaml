@@ -20,7 +20,7 @@ jobs:
 
     - name: Configure
       run: cmake .
-      working-directory: /home/gabriel/Desktop/C++/DSAQ1
+    
     
     - name: Build with CMake
       run: cmake --build . --config Release
