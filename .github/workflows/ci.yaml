@@ -15,15 +15,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
     - name: Install CMake
       run: sudo apt-get update && sudo apt-get install -y cmake
 
     - name: Configure
       run: cmake ..
-    
+
     - name: Build with CMake
       run: cmake --build . --config Release
 
     - name: Run tests
       run: ctest -C Release --output-on-failure
-
