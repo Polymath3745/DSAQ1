@@ -5,7 +5,6 @@ on:
     branches:
       - main
       - master
-      - 'refs/heads/*' # Trigger for all branches
   pull_request:
     branches:
       - main
@@ -18,14 +17,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Install CMake
-      run: sudo apt-get update && sudo apt-get install -y cmake
-
-    - name: Configure
-      run: cmake .
+    - name: Set up CMake
+      uses: martinlindhe/cmake-action@v1
 
     - name: Build with CMake
-      run: cmake --build . 
+      run: cmake --build . --config Release
 
     - name: Run tests
-      run: ctest -C Debug
+      run: ctest -C Release --output-on-failure
