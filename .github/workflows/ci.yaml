@@ -21,8 +21,9 @@ jobs:
     - name: Install CMake
       run: sudo apt-get update && sudo apt-get install -y cmake
 
-    - name: Set GTest Root
-      run: echo "export GTEST_ROOT=googletest" >> $GITHUB_ENV
+    - name: Install Google Test
+      run: |
+        sudo apt-get install -y libgtest-dev
 
     - name: Configure
       run: cmake .
