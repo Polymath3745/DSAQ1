@@ -8,6 +8,12 @@ set(CMAKE_BUILD_TYPE Debug)
 # Add the path to Google Test
 #list(APPEND CMAKE_PREFIX_PATH "/usr/local/lib/cmake")
 
+# Add the path to Google Test
+add_subdirectory(googletest)  # Add this line
+
+# Include directory containing Google Test header files
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})  # Add this line
+
 find_package(GTest REQUIRED)
 
 # Include directories for project
