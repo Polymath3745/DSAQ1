@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - master
-      - 'refs/heads/*' # Trigger for all branches
+      - refs/heads/* # Trigger for all branches
   pull_request:
     branches:
       - main
@@ -20,6 +20,9 @@ jobs:
 
     - name: Install CMake
       run: sudo apt-get update && sudo apt-get install -y cmake
+
+    - name: Set GTest Root
+      run: echo "export GTEST_ROOT=googletest" >> $GITHUB_ENV
 
     - name: Configure
       run: cmake .
