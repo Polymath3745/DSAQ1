@@ -4,12 +4,8 @@ project(googleTest_practice)
 # Set the build type
 set(CMAKE_BUILD_TYPE Debug)
 
-
 # Add the path to Google Test
 list(APPEND CMAKE_PREFIX_PATH "/usr/local/lib/cmake")
-
-# Specify the path to Google Test
-#set(GTEST_ROOT "/home/runner/work/DSAQ1/googletest")
 
 # Find Google Test package
 find_package(GTest REQUIRED)
