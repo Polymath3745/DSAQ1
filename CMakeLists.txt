@@ -5,7 +5,10 @@ project(googleTest_practice)
 set(CMAKE_BUILD_TYPE Debug)
 
 # Add the path to Google Test
-list(APPEND CMAKE_PREFIX_PATH "/usr/local/lib/cmake")
+#list(APPEND CMAKE_PREFIX_PATH "/usr/local/lib/cmake")
+
+# Specify the path to Google Test
+set(GTEST_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/googletest")
 
 # Find Google Test package
 find_package(GTest REQUIRED)
