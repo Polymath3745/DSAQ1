@@ -56,6 +56,6 @@ void Dog<T, N, M>::bark()
 template <class T, class N, class M>
 void Dog<T, N, M>::stand()
 {
-    std::cout << m_name << " just stood up" << std::endl;
+    std::cout << m_name << " just stood up and..." << std::endl;
 }
 #endif
