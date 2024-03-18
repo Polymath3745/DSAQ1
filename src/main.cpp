@@ -1,4 +1,5 @@
 #include "LinkedList.hpp"
+#include "Dog.hpp"
 
 int main()
 {
@@ -9,5 +10,7 @@ int main()
     }
 
     list.reverse(list.getHead());
-    
+
+    Dog<>* dog = new Dog<>("rex", "mastiff", 32);
+    dog->bark();
 }
