@@ -1,5 +1,6 @@
 #include "LinkedList.hpp"
 #include "Dog.hpp"
+#include <iostream>
 
 int main()
 {

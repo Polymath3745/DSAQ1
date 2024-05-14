@@ -26,9 +26,6 @@ add_executable(TEST
     src/LinkedList.cpp
 )
 
-# Link your main application with Student class
-target_link_libraries(MAIN PRIVATE)
-
 # Link your test executable with Google Test and Google Test Main
 target_link_libraries(TEST PRIVATE GTest::GTest GTest::Main)
 
